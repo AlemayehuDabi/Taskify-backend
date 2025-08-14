@@ -1,0 +1,28 @@
+# Project root (where Air will watch for changes)
+root = "."
+
+# Folder to put compiled binary
+tmp_dir = "tmp"
+
+# Build settings
+[build]
+# Command to build your Go app
+cmd = "go build -o ./tmp/main.exe ."
+# Path to the binary to run
+bin = "tmp\\main.exe"
+# Extensions to watch
+include_ext = ["go"]
+# Directories to ignore
+exclude_dir = ["vendor", "tmp", "client"]
+
+# Logging colors (optional)
+[color]
+build = "yellow"
+main = "magenta"
+runner = "green"
+watcher = "cyan"
+
+# Screen behavior (optional)
+[screen]
+clear_on_rebuild = true
+keep_scroll = false

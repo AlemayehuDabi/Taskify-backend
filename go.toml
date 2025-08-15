@@ -11,7 +11,7 @@ cmd = "go build -o ./tmp/main.exe ."
 # Path to the binary to run
 bin = "tmp\\main.exe"
 # Extensions to watch
-include_ext = ["go"]
+include_ext = ["go", "cmd/server/go"]
 # Directories to ignore
 exclude_dir = ["vendor", "tmp", "client"]
 
